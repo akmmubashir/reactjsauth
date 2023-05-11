@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(0, 0, 0, 0.71) 0%,
+    rgba(0, 0, 0, 0.89) 100%
+  );
+}
+
+th,
+td {
+  color: #fff;
+}
+
+.main-inner {
+  padding: 0px 100px;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow-y: hidden;
+}
+
+.bg-none,
+.bg-none-f {
+  background-color: #00000000 !important;
+}
+
+.bg-none a,
+.bg-none-f a {
+  color: #fff;
+}
+
+.bg-none a:hover,
+.bg-none-f a:hover {
+  color: #dcdcdc;
+}
+
+.logo {
+  font-family: "Kalam", cursive;
+  font-size: 40px;
+  font-weight: 800;
+  color: #fff !important;
+}
+
+.offcanvas .logo {
+  font-family: "Kalam", cursive;
+  font-size: 28px;
+  font-weight: 800;
+  color: #000000 !important;
+}
+
+.offcanvas-body {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.offcanvas-body ul li a {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.head {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.mob-menu button {
+  background-color: #00000000 !important;
+  padding: 0 !important;
+  font-size: 24px !important;
+  border: none !important;
+}
+
+.logout {
+  background-color: #00000000 !important;
+  padding: 0 !important;
+  /* font-size: 24px !important; */
+  border: none !important;
+}
+
+.offcanvas {
+  width: 100%;
+  height: 100vh !important;
+}
+
+@media (min-width: 993px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-inner {
+    padding: 60px 60px;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .head {
+    margin-bottom: 30px;
+    /* text-align: center; */
+  }
+  .logo {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 552px) {
+  .main-inner {
+    padding: 100px 20px 60px;
+    overflow-y: unset !important;
+    height: 100% !important;
+  }
+  .head {
+    margin-bottom: 20px;
+  }
+  .bg-none,
+  .bg-none-f {
+    background-color: #000000 !important;
+  }
+  .offcanvas-body ul li a {
+    font-size: 30px;
+  }
+}
